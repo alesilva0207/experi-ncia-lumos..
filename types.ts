@@ -1,11 +1,20 @@
 
-export interface Room {
-  id: string;
-  name: string;
-  description: string;
-  pricePerNight: number;
-  maxGuests: number;
-  images: string[];
-  amenities: string[];
-  cleaningFee: number;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans scroll-smooth;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }

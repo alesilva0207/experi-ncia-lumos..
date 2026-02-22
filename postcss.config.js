@@ -1,34 +1,6 @@
-{
-  "name": "pousada-lumos",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "tsx server.ts",
-    "start": "node server.ts",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "tsc --noEmit"
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
   },
-  "dependencies": {
-    "lucide-react": "^0.575.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "devDependencies": {
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.6",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
-    "@vitejs/plugin-react": "^4.3.4",
-    "autoprefixer": "^10.4.20",
-    "cors": "^2.8.6",
-    "dotenv": "^17.3.1",
-    "express": "^5.2.1",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.14",
-    "tsx": "^4.21.0",
-    "typescript": "^5.6.2",
-    "vite": "^6.0.0"
-  }
 }
