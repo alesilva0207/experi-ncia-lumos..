@@ -1,5 +1,4 @@
-{
-  "name": "Chalé Lumos Experience",
-  "description": "Uma experiência de reserva completa estilo Airbnb para o Chalé Lumos Experience.",
-  "requestFramePermissions": []
-}
+# Vercel Deployment Credentials
+VERCEL_TOKEN=
+VERCEL_ORG_ID=
+VERCEL_PROJECT_ID=
