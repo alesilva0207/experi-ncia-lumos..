@@ -1,32 +1,30 @@
 # Chalé Lumos Experience
 
-Este é o código fonte do site do Chalé Lumos Experience.
+### ⚠️ COMO SUBIR PARA O GITHUB (IMPORTANTE)
 
-## Como publicar no GitHub e Vercel sem erros
+Para o Vercel funcionar, seu repositório no GitHub deve ficar **EXATAMENTE** assim na página inicial:
 
-O erro `Token inesperado '<'` no Vercel geralmente acontece quando o arquivo `package.json` é baixado incorretamente como um arquivo HTML.
+```text
+/src                <-- (Pasta com os códigos)
+.gitignore          <-- (Arquivo oculto)
+index.html          <-- (Arquivo na raiz)
+package.json        <-- (Arquivo na raiz)
+postcss.config.js   <-- (Arquivo na raiz)
+tailwind.config.js  <-- (Arquivo na raiz)
+tsconfig.json       <-- (Arquivo na raiz)
+vercel.json         <-- (Arquivo na raiz)
+vite.config.ts      <-- (Arquivo na raiz)
+```
 
-### Passo a Passo Correto:
+**ERRO COMUM:** Se você abrir o GitHub e ver uma pasta chamada `pousada-lumos` e os arquivos dentro dela, **ESTÁ ERRADO**. Os arquivos devem estar soltos na página inicial do repositório.
 
-1. **Não baixe os arquivos um por um pelo navegador.**
-2. Use a opção de **Download ZIP** (se disponível) ou copie o conteúdo dos arquivos **brutos (raw)**.
-3. **Estrutura de Pastas:** Certifique-se de que a pasta `src` está na raiz do seu repositório.
-4. **Arquivos na Raiz:**
-   - `package.json`
-   - `vite.config.ts`
-   - `tailwind.config.js`
-   - `postcss.config.js`
-   - `index.html`
-   - `vercel.json`
-   - `.gitignore`
-5. **Vercel:** Ao importar no Vercel, ele deve detectar automaticamente que é um projeto **Vite**. Não altere as configurações de build padrão do Vercel.
+### Como fazer:
+1. Baixe o projeto.
+2. Entre na pasta do projeto no seu computador.
+3. Selecione todos os arquivos e pastas (src, index.html, package.json, etc).
+4. Arraste tudo para dentro do seu repositório no GitHub.
 
-### Configurações de Build no Vercel:
-- **Framework Preset:** Vite
+### Configurações no Vercel:
+- **Framework:** Vite
 - **Build Command:** `npm run build`
 - **Output Directory:** `dist`
-- **Install Command:** `npm install`
-
----
-
-**Nota:** O arquivo `.gitignore` já está configurado para não enviar a pasta `node_modules` e `dist` para o GitHub. Isso é essencial para que o Vercel faça o build do zero corretamente.
